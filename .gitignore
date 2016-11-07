@@ -6,3 +6,5 @@ public
 coverage
 assets/img
 assets/video
+
+server/env/development.js
