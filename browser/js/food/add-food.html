@@ -1,0 +1,82 @@
+<div>
+	<h3 class="p-title p-title-no-margin">
+		<span>New Food</span>
+	</h3>
+</div>
+
+<div layout="row">
+
+<span flex="10"></span>
+<md-content class="md-padding" flex>
+	<div layout="column" ng-cloak class="md-inline-form">
+		<md-content layout-padding>
+			<div>
+				<form name="foodForm">
+					<div layout-gt-sm="row">
+						<md-input-container class="md-block" flex-gt-sm>
+							<label>food Title</label>
+							<input ng-model="food.title">
+						</md-input-container>
+						<md-input-container class="md-block" >
+							<label>Type</label>
+							<md-select ng-model="food.category">
+								<md-option ng-repeat="category in categories" value="{{category.title}}">
+									{{category.title}}
+								</md-option>
+							</md-select>
+						</md-input-container>
+					</div>
+					<div layout-gt-sm="row">
+						<md-input-container class="md-block" flex-gt-sm>
+							<label>Summary</label>
+							<input ng-model="food.summary">
+						</md-input-container>
+					</div>
+					<div layout="row">
+					<md-input-container class="md-block" flex>
+						<label>Content</label>
+						<input ng-model="contentPiece">
+					</md-input-container>
+						<md-button ng-click="addBlock()" class="md-primary">Add</md-button>
+					</div>
+					<div ng-show="contentBlock.length">
+						<h3 class="text-center">Content</h3>
+						<p ng-repeat="content in contentBlock">
+							{{content}}
+						</p>
+					</div>
+					<md-button class="md-primary md-raised" ng-click="addFood()">Submit</md-button>
+				</form>
+			</div>
+		</md-content>
+	</div>
+	<hr>
+	<div layout="column" ng-cloak class="md-inline-form">
+	<md-content layout-padding>
+		<div>
+			<form name="categoryForm">
+				<div layout-gt-sm="row">
+					<md-input-container class="md-block" flex-gt-sm>
+						<label>New Category</label>
+						<input ng-model="newCategory.title">
+					</md-input-container>
+					<md-input-container class="md-block" flex-gt-sm>
+						<label>Picture Url</label>
+						<input ng-model="newCategory.image">
+					</md-input-container>
+					<md-input-container class="md-block" flex-gt-sm>
+						<md-button class="md-primary md-raised" ng-click="addCategory(newCategory)">Add</md-button>
+					</md-input-container>
+				</div>
+			</form>
+		</div>
+	</md-content>
+</div>
+</md-content>
+<span flex="10"></span>
+</div>
+
+
+
+
+

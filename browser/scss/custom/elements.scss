@@ -1,0 +1,136 @@
+food-item {
+	display: block;
+}
+
+.mt-headshot {
+	padding-right: 10px;
+	max-width: 300px;
+}
+
+.mt-headshot img {
+	max-width: 100%;
+}
+
+.mt-cv {
+	text-align: left;
+	margin-left: 10px;
+}
+
+.mt-cv h2 {
+	font-size: 40px;
+}
+
+.mt-cv p {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.mt-cv ul {
+	list-style: none;
+}
+
+.mt-cv li {
+	padding-bottom: 10px;
+}
+
+.mt-box-img {
+	// max-height: 300px;
+	// width: auto !important;
+}
+
+.thumbnail-box {
+	max-height: 400px;
+}
+
+
+
+.mt-client {
+	overflow: hidden;
+}
+
+
+.mt-client img {
+	max-height: 350px;
+	min-width: 350px;
+}
+
+
+.mt-client-item {
+	
+}
+
+
+.clients-carousel .mt-client-item {
+	position: relative;
+    margin: 15px;
+    height: 250px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+
+.mt-client-item .caption {
+	padding: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mt-client-item img {
+	position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+
+.mt-client-item .caption h3 {
+	margin: 0;
+	}
+.mt-client-item .caption hr {
+	width: 100px;
+}
+
+
+.clients-carousel .owl-controls {
+  margin-top: 0;
+}
+.clients-carousel .owl-controls .owl-prev,
+.clients-carousel .owl-controls .owl-next {
+  text-align: center;
+  position: absolute;
+  height: 60px;
+  width: 40px;
+  border-radius: 0 !important;
+  line-height: 50px;
+  font-size: 30px !important;
+  margin: auto 0 !important;
+  top: 0;
+  bottom: 0;
+  background-color: #38E6D8 !important;
+  color: white !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.clients-carousel .owl-controls .owl-prev:hover,
+.clients-carousel .owl-controls .owl-next:hover {
+  opacity: 1;
+}
+.clients-carousel .owl-controls .owl-prev {
+  left: 15px;
+}
+.clients-carousel .owl-controls .owl-next {
+  right: 15px;
+}
+
+
+
+.owl-wrapper {}

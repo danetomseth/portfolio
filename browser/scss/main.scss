@@ -1,0 +1,74 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+body {
+  // background: #fff;
+}
+
+html, body {
+	min-height: 100vh !important;
+}
+
+ header {
+  min-height: 100vh;
+ }
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#main {
+  // padding-top: 0px;
+  // margin: 0 auto;
+  // min-height: 100vh !important;
+}
+
+.main {
+  // background: blue;
+  // min-height: 100vh !important;
+}
+
+.mt-home-video {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: -25%;
+  z-index: 3;
+}
+.mt-home-video video {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.mt-video-wrapper {
+  padding: 0px;
+  height: 500px;
+  overflow: hidden;
+}
+
+
+.mt-video-text {
+  position: relative;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  color: #fff;
+}
+
+.navbar-shrink {
+    // background-color: #222 !important;
+}
+
+@import 'home/main';
+@import 'about/main';
+@import 'tutorial/main';
+@import 'login/main';
+@import 'custom/_main.scss';
+@import 'directives/main';
