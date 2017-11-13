@@ -6,6 +6,7 @@ router.use('/members', require('./members'));
 router.use('/projects', require('./projects'));
 router.use('/food', require('./food'));
 router.use('/photos', require('./photos'));
+router.use('/clients', require('./clients'));
 
 // Make sure this is after all of
 // the registered routes!

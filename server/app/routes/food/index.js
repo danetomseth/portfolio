@@ -19,7 +19,6 @@ router.get('/', (req, res, next) => {
                 console.log("Error fetching foods");
                 next(err);
             } else {
-                console.log("sending foods: ", foods);
                 res.send(foods);
             }
         })
@@ -28,7 +27,6 @@ router.get('/', (req, res, next) => {
 router.get('/:foodId', (req, res, next) => {
     Food.findById(req.params.foodId)
     .then(food => {
-        console.log('single food', food);
         res.send(food);
     });
 });
@@ -45,7 +43,6 @@ router.post('/', (req, res, next) => {
                 console.log("Error saving food");
                 next(err);
             } else {
-                console.log("food created: ", food);
                 res.send(food);
             }
         })

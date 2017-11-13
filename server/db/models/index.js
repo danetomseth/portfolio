@@ -6,3 +6,4 @@ require('./photo');
 require('./projects');
 require('./food');
 require('./photo')
+require('./clients')

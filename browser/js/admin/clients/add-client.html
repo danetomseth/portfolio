@@ -1,0 +1,49 @@
+<div>
+	<h3 class="p-title p-title-no-margin">
+		<span>New Client</span>
+	</h3>
+</div>
+
+<div layout="row">
+
+	<span flex="10"></span>
+	<md-content class="md-padding" flex>
+		<div layout="column" ng-cloak class="md-inline-form">
+			<md-content layout-padding>
+				<div>
+					<form name="clientForm">
+						<div layout-gt-sm="row">
+						</div>
+						<div layout-gt-sm="row">
+							<md-input-container class="md-block" flex-gt-sm>
+								<label>Client Name</label>
+								<input ng-model="client.name">
+							</md-input-container>
+						</div>
+						<div layout-gt-sm="row">
+							<md-input-container class="md-block" flex-gt-sm>
+								<label>About</label>
+								<input ng-model="client.about">
+							</md-input-container>
+						</div>
+						<div layout="row">
+							<md-input-container class="md-block" flex>
+								<label>Testimonial</label>
+								<input ng-model="client.testimonial">
+							</md-input-container>
+						</div>
+				
+						<md-button class="md-primary md-raised" ng-click="addClient()">Submit</md-button>
+					</form>
+				</div>
+			</md-content>
+		</div>
+		<hr>
+	</md-content>
+	<span flex="10"></span>
+</div>
+
+
+
+
+

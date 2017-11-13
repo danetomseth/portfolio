@@ -1,7 +1,7 @@
 app.config(function($stateProvider) {
 	$stateProvider.state('food', {
 		url: '/food-styling',
-		templateUrl: 'js/food/food.html',
+		templateUrl: '/js/admin/food/food.html',
 		controller: 'FoodCtrl',
 		resolve: {
             foodItems: (FoodFactory) => {
@@ -15,7 +15,7 @@ app.config(function($stateProvider) {
 app.config(function($stateProvider) {
 	$stateProvider.state('addFoodItem', {
 		url: '/add-food-item',
-		templateUrl: '/js/food/add-food.html',
+		templateUrl: '/js/admin/food/add-food.html',
 		controller: 'AddFoodCtrl'
 	})
 });
