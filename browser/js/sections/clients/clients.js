@@ -1,7 +1,8 @@
-app.directive('clientsSection', function() {
+app.directive('clientsSection', function(ClientsFactory) {
     return {
         restrict: 'E',
         templateUrl: 'js/sections/clients/clients.html',
+        contoller: 'AddClientCtrl',
         link: (scope, elem, attr) => {
             let itemA = {
                 photo: '/assets/photos/img-2.jpg',
@@ -30,6 +31,19 @@ app.directive('clientsSection', function() {
                     "<i class='fa fa-angle-right'></i>"
                 ]
             });
+
+
+            scope.fetchAll = () => {
+                ClientsFactory.fetchAll().then((data) => {
+                    scope.clients = data
+                    console.log(scope.clients);
+                })
+            }
+
+
+            scope.delete = (client) => {
+                ClientsFactory.delete(client._id)
+            }
 
             // $(".clients-carousel").owlCarousel({
             //     autoPlay: 3000,

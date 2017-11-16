@@ -1,0 +1,29 @@
+#mt-client-box {
+	min-height: 200px;
+	max-width: 400px;
+	background: blue;
+}
+
+#mt-client-box .heading {
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+
+#mt-client-box .about {
+	font-size: 18px;
+	color: white
+}
+
+#mt-client-box .testimonial {
+	font-size: 18px;
+	color: white
+}
+
+#mt-client-box img {
+	max-height: 100px;
+}
+
+clients-section {
+	width: 100%
+}

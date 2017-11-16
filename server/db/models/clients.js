@@ -14,9 +14,14 @@ var schema = new mongoose.Schema({
     testimonial: {
         type: String
     },
+    // logo: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'Photo'
+    // },
     logo: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Photo'
+        type: String,
+        ref: 'Photo',
+        default: "assets/img/self/coco-3.jpg"
     },
     photos: [{
         type: mongoose.Schema.Types.ObjectId,

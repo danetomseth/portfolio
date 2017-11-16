@@ -4,7 +4,7 @@ app.config(function($stateProvider) {
 		templateUrl: '/js/admin/clients/add-client.html',
 		controller: 'AddClientCtrl',
 		resolve: {
-        	projects: (ClientsFactory) => {
+        	clients: (ClientsFactory) => {
         		return ClientsFactory.fetchAll()
         	}
         }

@@ -1,6 +1,5 @@
-
-
-          <section id="clients">
+<!-- 
+<section id="clients">
         <div class="container text-center wow fadeIn">
             <div class="row">
                 <div class="col-lg-12">
@@ -31,7 +30,6 @@
                             <div class="caption">
                                 <h3>Mellows</h3>
                                 <hr class="colored">
-                                <!-- <img src="assets/img/self/coco-1.jpg" class="img-responsive" alt=""> -->
                             </div>
                         </div>
                         <div class="mt-client-item">
@@ -45,4 +43,35 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+
+
+<div>
+    
+    <div layout="row" layout-margin layout-align="center center">
+        <div flex ng-repeat="client in clients" id="mt-client-box" layout="column" layout-padding>
+            <div layout="row" layout-align="center center">
+                <div flex layout-align="center center" class="heading text-center">
+                    Name: {{client.name}}
+                    
+                </div>
+                <div flex="30">
+                    <img ng-src={{client.logo}} class="img-responsive" alt="">
+                </div>
+                
+            </div>
+            <div class="about">  
+                About: {{client.about}}
+            </div>
+            <div class="testimonial">  
+                Testamonial: {{client.testimonial}}
+            </div>
+            <div class="text-center">
+            <md-button class="md-primary md-raised" ng-click="delete(client)">Delete</md-button>
+            </div>
+        </div>
+
+    </div>
+</div>

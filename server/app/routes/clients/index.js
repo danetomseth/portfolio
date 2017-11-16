@@ -40,5 +40,18 @@ router.post('/', (req, res, next) => {
 
 
 
+router.delete('/:id', (req, res, next) => {
+	Client.findById(req.params.id).remove((err) => {
+		if(err) {
+			next(err)
+		}
+		else {
+			res.send("SUCCESS")
+		}
+	})
+})
+
+
+
 
 module.exports = router;

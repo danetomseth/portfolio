@@ -1,5 +1,5 @@
-app.controller('AddClientCtrl', function($scope, ClientsFactory) {
-
+app.controller('AddClientCtrl', function($scope, clients, ClientsFactory) {
+	$scope.clients = clients
 
 
 	$scope.addBlock = () => {
